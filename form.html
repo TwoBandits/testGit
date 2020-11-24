@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表单的简介</title>
+  </head>
+  <body>
+    <!-- 
+        网页中的表单用于将本地的数据提交远程的服务器
+            使用form标签来创建一个表单
+       -->
+    <!-- 
+           form的属性   
+                action      表单要提交的服务器地址
+        -->
+    <!-- 
+            注意：要提交数据到服务器，必须要给元素指定一个name属性值
+                        根据提交内容来指定
+         -->
+    <form action="form's demonstration.html">
+      <!-- 添加表单项 -->
+      <!-- 文本框  type是 text -->
+      用户：<input type="text" /><br />
+      <!-- 密码框  type是 password-->
+      密码：<input type="password" /><br />
+      <!-- 选择框   必须指定一个value属性，value的属性值就是作为用户填写的数据传给服务器 -->
+      <!-- 单选按钮  type是 radio
+                -如果name属性值是一样的就是同一组，同一组只能选择一个
+                -checked 可以将单选按钮设置为默认选中
+    -->
+      性别： 男<input type="radio" name="sex" value="NAN" checked /> 女<input
+        type="radio"
+        name="sex"
+        value="NV"
+      /><br />
+      <!-- 多选按钮  type是 CheckBox-->
+      兴趣：美食<input type="checkbox" name="hobby" value="美食" /> 电影<input
+        type="checkbox"
+        name="hobby"
+        value="电影"
+      />
+      游戏<input type="checkbox" name="hobby" value="游戏" /><br />
+      <!-- 下拉列表 -->
+      <select name="Birthplace" id="">
+        <option value="I">重庆市</option>
+        <option value="II">四川省</option>
+        <option value="III">湖北省</option></select
+      ><br />
+      <!-- 按钮 -->
+      <input type="submit" value="登录" />
+    </form>
+  </body>
+</html>
